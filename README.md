@@ -1,31 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Resume and Portfolio Website
 
-## Getting Started
+This repository contains the source code for my personal website that showcases my resume and portfolio of apps I've worked on over the years. The website is built using Next.js and follows a vanilla approach, without the use of any external libraries, except for Next.js built-in functions.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Next.js: A React framework for building static and server-side rendered applications.
+- HTML/CSS: Vanilla HTML and CSS are used for styling and layout purposes.
+- TypeScript: The website utilizes TypeScript for interactivity and functionality.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Design File
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+For the design of the website, please refer to the [Design File](https://www.figma.com/file/XPbetXpArucgcKU1nTfNkY/My-Resume?type=design&node-id=0%3A1&t=8LSlIMoumiqR1aZc-1). The design file provides a visual representation of the website's layout, colors, typography, and other design elements.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is released under the MIT License. Feel free to modify it as per your requirements.
 
 ## Deploy on Vercel
 

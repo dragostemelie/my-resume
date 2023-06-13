@@ -1,0 +1,88 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding-block: 4.8rem;
+  padding-inline: 2.4rem;
+}
+
+.main aside {
+  margin-left: auto;
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+.main aside > section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.main aside > section > h4 {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+  color: var(--clr-black);
+}
+
+.main article {
+  position: relative;
+  margin-left: 3.2rem;
+  padding-left: 3.2rem;
+  margin-right: auto;
+  max-width: 81.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+.main article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background-color: #d9d9d9;
+}
+
+.main article > h2 {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 600;
+  font-size: 4.8rem;
+  color: var(--clr-black);
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column-reverse;
+    gap: 3.2rem;
+    padding-block: 2.4rem;
+    padding-inline: 1.6rem;
+  }
+  .main aside {
+    margin-left: 0;
+    max-width: 100%;
+    gap: 3.2rem;
+  }
+  .main aside > section > h4 {
+    font-size: 3.2rem;
+  }
+  .main article {
+    margin-left: 0;
+    padding-left: 0;
+    gap: 3.2rem;
+  }
+  .main article::before {
+    content: none;
+  }
+  .main aside > section:not(:last-of-type)::after {
+    content: '';
+    height: 1px;
+    background-color: #d3d3d3;
+  }
+  .main aside > section > h4 {
+    margin-inline: auto;
+  }
+}

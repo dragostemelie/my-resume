@@ -1,95 +1,46 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client';
+
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
+import photo from './assets/resume/dragos-temelie.jpg';
+import styles from './page.module.css';
+import { Spinner } from './components/spinner';
 
 export default function Home() {
+  const [timing, setTiming] = useState(0);
+
+  const startAnimating = () => {
+    setTimeout(() => incrementTiming(timing + 1), 100);
+  };
+
+  const incrementTiming = (current: number) => {
+    if (current < 6) {
+      setTiming(current);
+      setTimeout(() => incrementTiming(current + 1), 200);
+    }
+  };
+
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+      <div className={`${styles.picture} ${timing > 0 ? styles.animate : ''}`}>
+        <Image src={photo} alt="Dragos Temelie" placeholder="blur" onLoad={startAnimating} />
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <nav className={styles.menu}>
+        <Link href="/resume" className={timing > 1 ? styles.animate : ''}>
+          Resume
+        </Link>
+        <Link href="/resume" className={timing > 2 ? styles.animate : ''}>
+          Projects
+        </Link>
+        <Link href="/resume" className={timing > 3 ? styles.animate : ''}>
+          Feedback
+        </Link>
+        <Link href="/resume" className={timing > 4 ? styles.animate : ''}>
+          References
+        </Link>
+      </nav>
     </main>
-  )
+  );
 }

@@ -1,0 +1,44 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.capability > * {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.25;
+}
+
+.experience .period {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--clr-dark);
+}
+
+.experience .role {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: var(--clr-black);
+}
+
+.experience .company {
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: var(--clr-dark);
+}
+
+.experience .description {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--clr-dark);
+}
+
+@media (max-width: 768px) {
+  .experience::after {
+    content: '';
+    height: 1px;
+    background-color: #d3d3d3;
+  }
+}

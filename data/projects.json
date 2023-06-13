@@ -1,0 +1,8 @@
+[
+  {
+    "name": "EndaFun",
+    "about": "    EndaFun is a social media app that aims to enhance interactions between colleagues outside the office.",
+    "technologies": ["react", "mui", "redux", "docker", "postgres"],
+    "invlolvement": "    I played the role of frontend dev. The project was built using React.js, Material UI, Redux and TypeScript. For the backend Java Spring Boot was used.  I also got the opportunity to use Figma to create some of the app screens."
+  }
+]

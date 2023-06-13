@@ -1,0 +1,89 @@
+.footer {
+  padding-inline: 2.4rem;
+  background-color: var(--clr-black);
+}
+.footer .wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 3.2rem 2.4rem;
+}
+
+.wrapper > nav {
+  display: flex;
+  gap: 2.4rem;
+  padding: 0.8rem 2.4rem;
+  flex: 1;
+}
+.wrapper > nav > a {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: white;
+}
+.wrapper > nav > a:global(.active) {
+  cursor: default;
+  color: var(--clr-yellow);
+  text-decoration: underline;
+}
+.wrapper > nav > a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  color: white;
+  padding: 0.8rem 2.4rem;
+  background-color: var(--clr-orange);
+  transition: background-color 0.3s ease;
+}
+.button::before {
+  content: url('data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMuOTk5ODQgMTMuMzMzN0MzLjYzMzE3IDEzLjMzMzcgMy4zMTkxNyAxMy4yMDMgMy4wNTc4NCAxMi45NDE3QzIuNzk2NSAxMi42ODAzIDIuNjY2MDYgMTIuMzY2NSAyLjY2NjUxIDEyLjAwMDNWMTAuMDAwM0gzLjk5OTg0VjEyLjAwMDNIMTEuOTk5OFYxMC4wMDAzSDEzLjMzMzJWMTIuMDAwM0MxMy4zMzMyIDEyLjM2NyAxMy4yMDI1IDEyLjY4MSAxMi45NDEyIDEyLjk0MjNDMTIuNjc5OCAxMy4yMDM3IDEyLjM2NjEgMTMuMzM0MSAxMS45OTk4IDEzLjMzMzdIMy45OTk4NFpNNy45OTk4NCAxMC42NjdMNC42NjY1MSA3LjMzMzY2TDUuNTk5ODQgNi4zNjY5OUw3LjMzMzE3IDguMTAwMzNWMi42NjY5OUg4LjY2NjUxVjguMTAwMzNMMTAuMzk5OCA2LjM2Njk5TDExLjMzMzIgNy4zMzM2Nkw3Ljk5OTg0IDEwLjY2N1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=');
+  display: inline-block;
+  margin: auto 0.6rem auto auto;
+  position: relative;
+  top: 2px;
+}
+.button:hover {
+  background-color: hsl(26, 90%, 37%);
+}
+.button:hover::before {
+  transform: scale(1.1);
+}
+
+.footer > p {
+  padding-block: 0.8rem 3.2rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #d3d3d3;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-inline: 0;
+  }
+  .footer .wrapper {
+    gap: 2.4rem;
+    padding: 3.2rem 1.6rem;
+    flex-direction: column-reverse;
+  }
+  .wrapper > nav {
+    flex-direction: column;
+  }
+  .wrapper > nav::before,
+  .wrapper > nav::after {
+    content: '';
+    margin-inline: -6rem;
+    height: 1px;
+    background-color: rgba(211, 211, 211, 0.3);
+  }
+  .wrapper > nav > a {
+    text-align: center;
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "name": "Dragoș Temelie",
+  "picture": "/resume/dragos-temelie.jpg",
+  "position": "FRONT-END DEVELOPER",
+  "about-me": "    I am passionate about building proper front-end architectures, aiming for simplicity and good coding practices. \n    I am easy to work with and strive to exceed expectations in every project I undertake.",
+  "work-experience": [
+    {
+      "period": "APR 2022 – MAY 2023",
+      "role": "Frontend Developer",
+      "company": "Endava Brașov",
+      "description": "Design and develop core application modules using Figma, React, Redux, TypeScript and MUI.\n• Working with Azure SSO;\n• Produce high-quality, scalable, documented code;\n• Perform peer code reviews;\n• Optimize code for maximum efficiency and scalability;\n• Working in a company with an Agile mindset;"
+    },
+    {
+      "period": "SEP 2021 – APR 2022",
+      "role": "Frontend Developer",
+      "company": "Enovatika Timișoara",
+      "description": "• Develop applications using React and Next.js;\n• Working with TypeScript, Redux, and styled-components;\n• Creating beautiful UI animations using JavaScript and CSS;\n• Working with backend developers to review the end-to-end flow;\n• Working with product owners and other business stakeholders to understand and analyse the evolution of the project;"
+    },
+    {
+      "period": "FEB 2021 - SEP 2021",
+      "role": "Junior Web Developer",
+      "company": "IT School, Timișoara",
+      "description": "Completed the Web Development internship, learning the following technologies:\n    • HTML & CSS; \n    • JavaScript;\n    • Bootstrap;\n    • React;"
+    },
+    {
+      "period": "APR 2018 - APR 2021",
+      "role": "Database Administrator",
+      "company": "Sara, Buzău",
+      "description": "• Maintenance and development of the ERP application used in the company;\n• Created business-specific reports and analyses using Excel and VBA;\n• Created custom reports using PHP, JavaScript and Datatables;\n• Configuration of operating systems and applications on the company's workstations;\n• Resolving technical incidents with IT&C equipment"
+    }
+  ],
+  "certificates": [
+    {
+      "date": "2022",
+      "title": "Programming using HTML and CSS",
+      "description": "Microsoft Technology Associate (w9Y93-FauU)",
+      "link": ""
+    },
+    {
+      "date": "2022",
+      "title": "Programming using JavaScript",
+      "description": "Microsoft Technology Associate (yK2v-uTYe)",
+      "link": ""
+    },
+    {
+      "date": "2021",
+      "title": "Front-end Web Developer",
+      "description": "IT School Timișoara",
+      "link": ""
+    },
+    {
+      "date": "2021",
+      "title": "Certificate Web Developer",
+      "description": "Romanian Ministry of Education",
+      "link": ""
+    }
+  ],
+  "education": [
+    {
+      "date": "2021",
+      "title": "Web development",
+      "description": "IT School course"
+    },
+    {
+      "date": "2021",
+      "title": "Object-oriented Programming in JavaScript",
+      "description": "Code  with Mosh: Online course"
+    },
+    {
+      "date": "1998 – 2002",
+      "title": "College degree",
+      "description": "Computer science - Certified analyst-programmer"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Front-End technologies:",
+      "description": "• JavaScript (ES5, ES6, TypeScript), \n• HTML5, CSS, SASS, styled-components\n• ReactJS, Redux, Redux Thunks\n• NextJS, Material UI"
+    },
+    {
+      "title": "Development experiences:",
+      "description": "• Experience working with Agile methodologies;\n• Experience with MS Graph and SSO logins;\n• Experience with Git;\n• Experience  with Redux, Material UI and PWAs;\n• Experience translating Figma and Zeplin design comps into code;\n• Experience designing components and prototypes using Figma;"
+    },
+    {
+      "title": "Languages:",
+      "description": "• Romanian - Native;\n• English - Advanced;"
+    },
+    {
+      "title": "Soft skills:",
+      "description": "• Reliable and honest;\n• Results-oriented;\n• Team player;"
+    }
+  ]
+}

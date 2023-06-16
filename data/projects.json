@@ -1,8 +1,42 @@
 [
   {
-    "name": "EndaFun",
+    "name": "Endafun",
+    "slug": "endafun",
     "about": "    EndaFun is a social media app that aims to enhance interactions between colleagues outside the office.",
     "technologies": ["react", "mui", "redux", "docker", "postgres"],
+    "link": "https://endafun.net",
     "invlolvement": "    I played the role of frontend dev. The project was built using React.js, Material UI, Redux and TypeScript. For the backend Java Spring Boot was used.  I also got the opportunity to use Figma to create some of the app screens."
+  },
+  {
+    "name": "JDAC Capital",
+    "slug": "jdac",
+    "about": "    An innovation focused investment firm located in Singapore.",
+    "technologies": ["next", "styled", "axios", "typescript", "greensock"],
+    "link": "https://jdac.com",
+    "invlolvement": "    I developed the company website using Next.js, as part of a 3-member team consisting of a developer, designer, and business owner."
+  },
+  {
+    "name": "Endavibe",
+    "slug": "endavibe",
+    "about": "    The app objective was to offer information and keep the business owners updated in due time about the health of the project and its members.",
+    "technologies": ["react", "mui", "chartjs", "typescript", "redux"],
+    "link": "",
+    "invlolvement": "    I developed the frontend part, in team with another colleague using React.js, Material UI and TypeScript. For the email templates we used HTML tables. We added Chart.Js for dashboard stats and reports."
+  },
+  {
+    "name": "IT School",
+    "slug": "itschool",
+    "about": "    IT School is one of the biggest IT course centres in Romania",
+    "technologies": ["next", "styled", "axios", "typescript", "mongo"],
+    "link": "https://itschool.ro",
+    "invlolvement": "    I developed the company website using Next.js, as part of a 3-member team consisting of a developer, designer, and business owner."
+  },
+  {
+    "name": "Timișoara Startups",
+    "slug": "tms",
+    "about": "    A community-driven initiative that brings together local entrepreneurs and makers that strive to make a difference.",
+    "technologies": ["react", "styled", "axios", "markdown", "express"],
+    "link": "https://itschool.ro",
+    "invlolvement": "    I developed the company website using React.js and styled-components as part of a 3-member team consisting of a developer, designer, and business owner."
   }
 ]

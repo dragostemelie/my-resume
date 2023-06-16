@@ -1,25 +1,29 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import styles from './page.module.css';
 
 import resume from '../../data/resume.json';
-import { Header } from './components/header';
+import { Headline } from './components/headline';
 import { Capability } from './components/capability';
 import { Experience } from './components/experience';
-import { Footer } from './components/footer';
+
+import { Header } from '../components/header';
+import { Footer } from '../components/footer';
 
 export default function Resume() {
-  const [loading, setLoading] = useState(true);
+  const [animate, setAnimate] = useState(false);
 
-  useEffect(() => {
-    setLoading(false);
-  }, []);
+  const startAnimating = () => {
+    setAnimate(true);
+  };
 
   return (
     <>
-      <Header />
+      <Header>
+        <Headline animate={animate} onLoad={startAnimating} />
+      </Header>
       <main className={styles.main}>
         <aside>
           <section>
@@ -48,7 +52,7 @@ export default function Resume() {
           ))}
         </article>
       </main>
-      <Footer />
+      <Footer downloadLink="/docs/resume-dragos-temelie.pdf" downloadName="Resume" />
     </>
   );
 }

@@ -1,0 +1,149 @@
+.main {
+  padding-inline: 2.4rem;
+}
+
+.header {
+  min-height: 100vmax;
+  transition: min-height 0.4s ease-in;
+}
+
+.header h1 {
+  margin: auto;
+  max-width: 120rem;
+  font-family: 'Roboto Serif', serif;
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 1.25;
+  color: white;
+  opacity: 0;
+}
+
+.grid {
+  margin: 6.4rem auto;
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+  cursor: pointer;
+  padding: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d3d3d3;
+  background-color: white;
+  transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+  opacity: 0;
+  transform-origin: top left;
+  user-select: none;
+}
+.cell:hover {
+  border-color: var(--clr-yellow);
+  background-color: var(--clr-yellow);
+}
+.cell:hover .title::after {
+  right: -7.2rem;
+}
+.cell .title {
+  position: relative;
+  width: fit-content;
+  margin-block: 3.6rem 2.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: var(--var-clr-black);
+}
+.cell .title::after {
+  content: var(--icon-arrow-black);
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -5.6rem;
+  transition: inset 0.2s ease-in;
+}
+
+.cell .description {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--var-clr-black);
+}
+
+/* ANIMATIONS */
+.animate.header {
+  --animation-tick: 200ms;
+  min-height: 0;
+}
+.animate.header h1 {
+  animation: var(--animation-appear-from-top) 0.3s linear forwards;
+  animation-delay: calc(var(--animation-tick) * 3);
+}
+
+.animate {
+  --animation-tick: 85ms;
+}
+
+.animate .cell {
+  animation: var(--animation-animate-in) 0.3s linear forwards;
+}
+
+.animate .cell:nth-of-type(1) {
+  animation-delay: calc(var(--animation-tick) * 10);
+}
+
+.animate .cell:nth-of-type(2) {
+  animation-delay: calc(var(--animation-tick) * 11);
+}
+
+.animate .cell:nth-of-type(3) {
+  animation-delay: calc(var(--animation-tick) * 12);
+}
+
+.animate .cell:nth-of-type(4) {
+  animation-delay: calc(var(--animation-tick) * 13);
+}
+
+.animate .cell:nth-of-type(5) {
+  animation-delay: calc(var(--animation-tick) * 14);
+}
+
+.animate .cell:nth-of-type(6) {
+  animation-delay: calc(var(--animation-tick) * 15);
+}
+
+.animate .cell:nth-of-type(7) {
+  animation-delay: calc(var(--animation-tick) * 16);
+}
+
+.animate .cell:nth-of-type(8) {
+  animation-delay: calc(var(--animation-tick) * 17);
+}
+
+.animate .cell:nth-of-type(9) {
+  animation-delay: calc(var(--animation-tick) * 18);
+}
+
+.animate .cell:nth-of-type(10) {
+  animation-delay: calc(var(--animation-tick) * 19);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+  .grid {
+    margin: 4.8rem auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-inline: 1.6rem;
+  }
+  .grid {
+    margin: 2.4rem auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

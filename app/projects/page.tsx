@@ -1,27 +1,14 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-
-import styles from './page.module.css';
-
-import endafunLogo from './assets/endafun-logo.png';
-import jdacLogo from './assets/jdac-logo.png';
-import endavibeLogo from './assets/endavibe-logo.png';
-import itschoolLogo from './assets/itschool-logo.png';
-import tmsLogo from './assets/tms-logo.png';
-import projects from '../../data/projects.json';
+import Image from 'next/image';
 
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
-import Image from 'next/image';
 
-const LOGOS = {
-  endafun: endafunLogo,
-  jdac: jdacLogo,
-  endavibe: endavibeLogo,
-  itschool: itschoolLogo,
-  tms: tmsLogo,
-};
+import { LOGOS } from '../consts/logos';
+import projects from '../../data/projects.json';
+import styles from './page.module.css';
 
 export default function Projects() {
   const [animate, setAnimate] = useState(false);
@@ -47,11 +34,11 @@ export default function Projects() {
             const logo = LOGOS[slug as keyof typeof LOGOS];
 
             return (
-              <div key={slug} className={styles.cell}>
+              <a key={slug} className={styles.cell} href={`/projects/${project.slug}`}>
                 <Image src={logo} alt={slug} placeholder="empty" />
                 <div className={styles.title}>{name}</div>
                 <div className={styles.description}>{about}</div>
-              </div>
+              </a>
             );
           })}
         </div>

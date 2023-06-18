@@ -1,6 +1,6 @@
 .wrapper {
   position: absolute;
-  inset: 0;
+  inset: -100vmax;
   display: flex;
   justify-content: center;
   align-items: center;

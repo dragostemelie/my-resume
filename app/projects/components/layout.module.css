@@ -1,0 +1,133 @@
+.main {
+  padding: 4.8rem 2.4rem;
+}
+
+.header {
+  min-height: 100vmax;
+  transition: min-height 0.4s ease-in;
+  max-width: 120rem;
+  margin: auto;
+}
+
+.header h1 {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 1.25;
+  color: white;
+  opacity: 0;
+}
+
+.quote {
+  margin-top: 3.6rem;
+  max-width: 50%;
+  position: relative;
+  flex: 1;
+  opacity: 0;
+}
+.quote::before {
+  content: var(--icon-double-quotes);
+  position: absolute;
+  top: -1.6em;
+  left: -0.8em;
+}
+.quote span {
+  display: block;
+  width: 100%;
+  font-family: 'Roboto Serif', serif;
+  font-weight: 400;
+  line-height: 1.25;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #d3d3d3;
+}
+
+.wrapper {
+  overflow-y: auto;
+  margin-top: 4.8rem;
+}
+
+.wrapper h2 {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 4.8rem;
+  color: var(--clr-black);
+}
+.wrapper p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  font-size: 1.8rem;
+  color: var(--clr-dark);
+}
+
+.wrapper > img {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  max-width: 120rem;
+}
+
+.screens {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  margin-inline: auto;
+  padding: 1.6rem;
+  width: 120rem;
+}
+.screens img {
+  box-shadow: 0px 0px 12px 2px rgb(0 0 0 / 15%);
+}
+
+/* ANIMATIONS */
+.main:global(.animate) {
+  --animation-tick: 200ms;
+}
+.header:global(.animate) {
+  min-height: 0;
+}
+.header:global(.animate) h1 {
+  animation: var(--animation-appear-from-top) 0.3s linear forwards;
+  animation-delay: calc(var(--animation-tick) * 2);
+}
+.header:global(.animate) .quote {
+  animation: var(--animation-fade-in) 0.3s linear forwards;
+  animation-delay: calc(var(--animation-tick) * 3);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+  .header h1 {
+    font-size: 4.2rem;
+  }
+
+  .quote span {
+    font-size: 1.4rem;
+  }
+
+  .wrapper h2 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding-bottom: 4rem;
+  }
+  .header h1 {
+    text-align: center;
+  }
+
+  .quote {
+    margin-left: 2.4rem;
+    max-width: 100%;
+  }
+
+  .main {
+    padding-inline: 1.6rem;
+  }
+}

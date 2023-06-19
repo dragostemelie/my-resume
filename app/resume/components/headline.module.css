@@ -75,8 +75,8 @@
 .quote::before {
   content: var(--icon-double-quotes);
   position: absolute;
-  top: -0.8em;
-  left: -0.8em;
+  top: -1em;
+  left: 0em;
 }
 .quote span {
   margin-top: 1em;

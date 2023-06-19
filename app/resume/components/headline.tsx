@@ -23,7 +23,7 @@ export const Headline = ({ animate, onLoad }: Props) => {
         </div>
         <div className={styles.quote}>
           {resume['about-me'].split('\n').map((str, idx) => (
-            <span key={'about' + idx}>{str}</span>
+            <span key={'about' + idx}>&nbsp;&nbsp;&nbsp;&nbsp;{str}</span>
           ))}
         </div>
       </div>

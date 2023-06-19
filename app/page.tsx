@@ -23,8 +23,8 @@ export default function Home() {
       <nav className={styles.menu}>
         <Link href="/resume">Resume</Link>
         <Link href="/projects">Projects</Link>
-        <Link href="/resume">Feedback</Link>
-        <Link href="/resume">References</Link>
+        <Link href="/feedback">Feedback</Link>
+        <Link href="/references">References</Link>
       </nav>
     </main>
   );

@@ -35,7 +35,7 @@ export default function Endafun() {
         <div className={`${styles.header} ${animate ? 'animate' : ''}`}>
           <h1>{name}</h1>
           <div className={styles.quote}>
-            <span>{about}</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;{about}</span>
           </div>
         </div>
       </Header>

@@ -28,8 +28,8 @@
 .quote::before {
   content: var(--icon-double-quotes);
   position: absolute;
-  top: -1.6em;
-  left: -0.8em;
+  top: -1.8em;
+  left: 0.4em;
 }
 .quote span {
   display: block;

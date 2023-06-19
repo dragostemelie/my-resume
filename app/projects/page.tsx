@@ -37,7 +37,7 @@ export default function Projects() {
               <a key={slug} className={styles.cell} href={`/projects/${project.slug}`}>
                 <Image src={logo} alt={slug} placeholder="empty" />
                 <div className={styles.title}>{name}</div>
-                <div className={styles.description}>{about}</div>
+                <div className={styles.description}>&nbsp;&nbsp;&nbsp;&nbsp;{about}</div>
               </a>
             );
           })}

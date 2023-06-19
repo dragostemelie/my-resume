@@ -39,7 +39,7 @@ export const ProjectDescription = ({
           {link}
         </a>
         <h2>Involvement </h2>
-        <p>{involvement}</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;{involvement}</p>
       </div>
       <div className={styles.phone}>
         <Image src={phoneImage} alt={name} placeholder="empty" />

@@ -35,11 +35,14 @@ export default function Endavibe() {
         </div>
       </Header>
       <main className={`${styles.main} ${animate ? styles.animate : ''}`}>
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} style={{ marginTop: -10 }}>
           <h2>Technologies </h2>
+          <div style={{ height: '2.4rem' }} />
           <Image src={techScreen} alt={name} placeholder="blur" />
+          <div style={{ height: '2.4rem' }} />
           <h2>Involvement </h2>
-          <p>{involvement}</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;{involvement}</p>
+          <div style={{ height: '2.4rem' }} />
           <Image src={notebookScreen} alt={name} placeholder="blur" />
         </div>
       </main>

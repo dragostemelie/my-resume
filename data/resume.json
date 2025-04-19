@@ -5,28 +5,39 @@
   "about-me": "    I am passionate about building proper front-end architectures, aiming for simplicity and good coding practices. \n    I am easy to work with and strive to exceed expectations in every project I undertake.",
   "work-experience": [
     {
+      "period": "JUN 2023 – PRESENT",
+      "role": "Front-End Developer",
+      "company": "Nestor, Iași",
+      "title": "Tech Stack: TypeScript, React, Redux, Chart.js, Konva, Figma, Storybook, Express, MySql, AWS",
+      "description": "• Develop application features using Figma, React, Express, and SASS; \n • Create and deploy test builds (PM2, Amazon EC2);\n • Produce high-quality, scalable, documented code; \n • Opportunistic refactoring on old modules for a more maintainable code; \n • Perform peer code reviews; \n • Working in a fast-paced and ambitious environment;"
+    },
+    {
       "period": "APR 2022 – MAY 2023",
-      "role": "Frontend Developer",
+      "role": "Front-End Developer",
       "company": "Endava Brașov",
-      "description": "Design and develop core application modules using Figma, React, Redux, TypeScript and MUI.\n• Working with Azure SSO;\n• Produce high-quality, scalable, documented code;\n• Perform peer code reviews;\n• Optimize code for maximum efficiency and scalability;\n• Working in a company with an Agile mindset;"
+      "title": "Tech Stack: TypeScript, React, Redux, PWA, Figma, Material UI, Azure SSO",
+      "description": "• Design and develop core application modules using Figma, React, and MUI; \n • Working with Azure SSO; \n • Produce high-quality, scalable, documented code; \n • Perform peer code reviews; \n • Optimize code for maximum efficiency and scalability; \n • Working in a company with an Agile mindset;"
     },
     {
       "period": "SEP 2021 – APR 2022",
-      "role": "Frontend Developer",
+      "role": "Front-End Developer",
       "company": "Enovatika Timișoara",
-      "description": "• Develop applications using React and Next.js;\n• Working with TypeScript, Redux, and styled-components;\n• Creating beautiful UI animations using JavaScript and CSS;\n• Working with backend developers to review the end-to-end flow;\n• Working with product owners and other business stakeholders to understand and analyse the evolution of the project;"
+      "title": "Tech Stack: TypeScript, React, Redux, Next.js, Figma, styled-components",
+      "description": "• Develop applications using Figma, React, and Next.js; \n • Working with TypeScript, Redux, and styled-components; \n • Creating projects from start to finish respecting the agreed design;\n • Creating beautiful UI animations using JavaScript and CSS; \n • Collaborating with backend developers and reviewing the end-to-end flow; \n • Working directly with clients and business stakeholders;"
     },
     {
       "period": "FEB 2021 - SEP 2021",
       "role": "Junior Web Developer",
       "company": "IT School, Timișoara",
-      "description": "Completed the Web Development internship, learning the following technologies:\n    • HTML & CSS; \n    • JavaScript;\n    • Bootstrap;\n    • React;"
+      "title": "",
+      "description": "Successfully completed the Front-end Web Development internship, enhancing my knowledge of the following technologies: \n • HTML & CSS \n • JavaScript \n • Bootstrap \n • Git \n • React.js"
     },
     {
       "period": "APR 2018 - APR 2021",
       "role": "Database Administrator",
       "company": "Sara, Buzău",
-      "description": "• Maintenance and development of the ERP application used in the company;\n• Created business-specific reports and analyses using Excel and VBA;\n• Created custom reports using PHP, JavaScript and Datatables;\n• Configuration of operating systems and applications on the company's workstations;\n• Resolving technical incidents with IT&C equipment"
+      "title": "Tech Stack: VBA, PHP, JQuery, Datatables, MySql",
+      "description": "• Maintenance and development of the ERP application(WinMentor) used in the company; \n • Created business-specific automated reports and analyses using Excel and VBA; \n • Created a live reports application using PHP, JavaScript, and Datatables; \n • Maintenance and configuration of users workstations; \n • Maintenance of the on-site network(servers, routers);"
     }
   ],
   "certificates": [

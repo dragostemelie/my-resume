@@ -13,7 +13,7 @@ import { PHONES } from "@/app/consts/phones";
 import projects from "../../../data/projects.json";
 import styles from "../components/layout.module.css";
 
-const { name, about, technologies, link, involvement } = projects[5];
+const { name, about, technologies, link, involvement } = projects[0];
 const phoneImage = PHONES.nestor;
 
 export default function ITSchool() {

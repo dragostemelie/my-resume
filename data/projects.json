@@ -1,5 +1,19 @@
 [
   {
+    "name": "Nestor",
+    "slug": "nestor",
+    "about": "    A skill-based talent management tool used by companies worldwide to help cultivate a future-ready workforce and improve employee retention.",
+    "technologies": [
+      "react",
+      "mui",
+      "redux",
+      "docker",
+      "postgres"
+    ],
+    "link": "https://nestorup.com",
+    "involvement": "    It's been a fulfilling ride here at Nestor. I took great pride in leading initiatives, like upgrading old dependencies, introducing Figma and Storybook usage, adding more modern React concepts, and overall increasing product performance."
+  },
+  {
     "name": "Endafun",
     "slug": "endafun",
     "about": "    EndaFun is a social media app that aims to enhance interactions\n between colleagues outside the office.",
@@ -68,19 +82,5 @@
     ],
     "link": "https://timisoarastartups.com/",
     "involvement": "    I developed the company website using React.js and styled-components as part of a 3-member team consisting of a developer, designer, and business owner."
-  },
-  {
-    "name": "Nestor",
-    "slug": "nestor",
-    "about": "    A skill-based talent management tool used by companies worldwide to help cultivate a future-ready workforce and improve employee retention.",
-    "technologies": [
-      "react",
-      "mui",
-      "redux",
-      "docker",
-      "postgres"
-    ],
-    "link": "https://nestorup.com",
-    "involvement": "    It's been a fulfilling ride here at Nestor. I took great pride in leading initiatives, like upgrading old dependencies, introducing Figma and Storybook usage, adding more modern React concepts, and overall increasing product performance."
   }
 ]

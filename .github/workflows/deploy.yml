@@ -1,9 +1,7 @@
 name: Drate Deploy
 
 on:
-    push:
-        branches:
-            - main
+    workflow_dispatch:
 
 jobs:
     deploy:
@@ -30,6 +28,6 @@ jobs:
                   host: ${{ secrets.SFTP_HOST }}
                   port: 22
                   user: ${{ secrets.SFTP_USER }}
-                  password: ${{ secrets.SFTP_PASSWORD }}
+                  pass: ${{ secrets.SFTP_PASSWORD }}
                   localDir: "./out"
                   remoteDir: "/public_html/my-resume"

@@ -2,21 +2,22 @@
   {
     "name": "Nestor",
     "slug": "nestor",
-    "about": "    A skill-based talent management tool used by companies worldwide to help cultivate a future-ready workforce and improve employee retention.",
+    "about": "    A skill-based talent management platform used by companies worldwide to help cultivate a future-ready workforce and improve employee retention.",
     "technologies": [
       "react",
-      "mui",
+      "bootstrap",
       "redux",
-      "docker",
-      "postgres"
+      "storybook",
+      "mysql",
+      "express"
     ],
     "link": "https://nestorup.com",
-    "involvement": "    It's been a fulfilling ride here at Nestor. I took great pride in leading initiatives, like upgrading old dependencies, introducing Figma and Storybook usage, adding more modern React concepts, and overall increasing product performance."
+    "involvement": "    I played the role of frontend dev. The project was built using React.js, Bootstrap, Redux and TypeScript. For the backend, Express and MySQL were used. I also got involved with Figma to create some of the prototypes."
   },
   {
     "name": "Endafun",
     "slug": "endafun",
-    "about": "    EndaFun is a social media app that aims to enhance interactions\n between colleagues outside the office.",
+    "about": "    A social media app that aims to enhance interactions\n between colleagues outside the office.",
     "technologies": [
       "react",
       "mui",
@@ -25,7 +26,7 @@
       "postgres"
     ],
     "link": "https://endafun.net",
-    "involvement": "    I played the role of frontend dev. The project was built using React.js, Material UI, Redux and TypeScript. For the backend Java Spring Boot was used.  I also got the opportunity to use Figma to create some of the app screens."
+    "involvement": "    I played the role of frontend dev. The project was built using React.js, Material UI, Redux and TypeScript. For the backend, Java Spring Boot was used.  I also got the opportunity to use Figma to create some of the app screens."
   },
   {
     "name": "JDAC Capital",
